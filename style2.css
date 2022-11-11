@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    width: 80%;
+    margin: auto;
+    background-image: url('img/1767974.jpg');
+    flex-direction: inherit;
+    background-repeat: no-repeat;
+}
+
+img {
+    width: 100%;
+}
+
+.head {
+    width: 100%;
+    margin: auto;
+}
+
+.head ul {
+    display: flex;
+    list-style: none;
+    margin: 10px;
+    font-size: 1.5rem;
+}
+
+.head li a {
+    margin-top: 5px;
+    padding: .5rem;
+    color: #FFCCCC;
+}
+
+li a:hover {
+    color: #FFCC66;
+    transition: 1s;
+}
+
+.head .logo img {
+    width: 50px;
+}
+
+.main {
+    width: 250px;
+}
+
+.neonText {
+    animation: flicker 1.2s infinite alternate;
+    color: #fff;
+}
+
+h1 {
+    font-size: 4.2rem;
+}
+
+
+/* Flickering animation */
+
+@keyframes flicker {
+    0%,
+    18%,
+    22%,
+    25%,
+    53%,
+    57%,
+    100% {
+        text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #0fa, 0 0 80px #0fa, 0 0 90px #0fa, 0 0 100px #0fa, 0 0 150px #0fa;
+    }
+    20%,
+    24%,
+    55% {
+        text-shadow: none;
+    }
+}
+
+
+/* Additional styling */
+
+h2 {
+    font-size: 1.8rem;
+}
+
+.container {
+    margin-top: 20vh;
+}
+
+body {
+    font-size: 18px;
+    font-family: "Helvetica Neue", sans-serif;
+    background-color: #010a01;
+}
+
+h1,
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+#container {
+    border-radius: 100px;
+    text-align: center;
+    display: flex;
+    margin-right: 10%;
+}
+
+.footer footer {
+    justify-content: space-around;
+    margin-top: 45%;
+    display: flex;
+    color: rgb(42, 241, 109);
+}
+
+.footer .col_1 {
+    color: rgb(42, 241, 109);
+    text-align: center;
+    line-height: 2.5rem;
+}
+
+.footer .col_2 {
+    text-align: center;
+}
+
+.footer .col_2 li a {
+    font-style: inherit;
+    color: #ffffff;
+}
+
+.footer .col_2 li a:hover {
+    color: #b90000;
+    transition: 1s;
+}
+
+.footer .col_3 {
+    text-align: center;
+    line-height: 2rem;
+}
+
+.search {
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+
+.searchTerm {
+    width: 100%;
+    border: 3px solid #00B4CC;
+    border-right: none;
+    padding: 5px;
+    height: 20px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #9DBFAF;
+}
+
+.searchTerm:focus {
+    color: #00B4CC;
+}
+
+.searchButton {
+    width: 100px;
+    height: 36px;
+    border: 1px solid #00B4CC;
+    background: #00B4CC;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.wrap {
+    width: 30%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
